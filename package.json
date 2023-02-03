@@ -1,0 +1,25 @@
+{
+  "name": "first-nodejs",
+  "version": "1.0.0",
+  "description": "✔ Nodejs 공부\r ✔ 최소1일 1커밋\r ✔ 건양대학병원 파이썬 프로젝트와 동시 진행중",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaosBlueStar/Nodejs-Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaosBlueStar/Nodejs-Study/issues"
+  },
+  "homepage": "https://github.com/ChaosBlueStar/Nodejs-Study#readme",
+  "dependencies": {
+    "sanitize-html": "^2.9.0"
+  }
+}
