@@ -143,4 +143,4 @@ var app = http.createServer(function(request,response){
       response.end('Not found');
     }
 });
-app.listen(3000);  //pm2 를 기점으로 생활코딩 node.js 종료
+app.listen(3000);  //pm2 를 기점으로 생활코딩 node.js 종료  //재수강 필요.
