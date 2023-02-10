@@ -25,7 +25,7 @@ var app = http.createServer(function(request,response){
           response.writeHead(200);
           response.end(html);
         });
-      } else {
+      } else { //각 항목 추가 생성
         fs.readdir('./data', function(error, filelist){
           var filteredId = path.parse(queryData.id).base;
           var filteredId = path.parse(queryData.id).base;
@@ -82,7 +82,7 @@ var app = http.createServer(function(request,response){
             response.end();
           })
       });
-    } else if(pathname === '/update'){
+    } else if(pathname === '/update'){ //각 항목 수정 (업데이트)
       fs.readdir('./data', function(error, filelist){
         var filteredId = path.parse(queryData.id).base;
         fs.readFile(`data/${filteredId}`, 'utf8', function(err, description){
@@ -124,7 +124,7 @@ var app = http.createServer(function(request,response){
             })
           });
       });
-    } else if(pathname === '/delete_process'){
+    } else if(pathname === '/delete_process'){ //각 항목 삭제
       var body = '';
       request.on('data', function(data){
           body = body + data;
