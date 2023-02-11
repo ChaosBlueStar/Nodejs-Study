@@ -1,6 +1,6 @@
 //230206 전체적인 설명 주석 달기
 
-var http = require('http');
+var http = require('http'); //각 var 생성
 var fs = require('fs');
 var url = require('url');
 var qs = require('querystring');
@@ -38,7 +38,7 @@ var app = http.createServer(function(request,response){
             var list = template.list(filelist);
             var html = template.HTML(sanitizedTitle, list,
               `<h2>${sanitizedTitle}</h2>${sanitizeDescription}`,
-              ` <a href="/create">create</a>
+              ` <a href="/create">create</a> 
                 <a href="/update?id=${sanitizedTitle}">update</a>
                 <form action="delete_process" method="post">
                   <input type="hidden" name="id" value="${sanitizedTitle}">
